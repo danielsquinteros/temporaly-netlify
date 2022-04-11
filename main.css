@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap');
+
+html, body{
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+
+    margin:0;
+    padding: 0;
+
+    height: auto;
+}
+
+header, section, article, nav, footer, aside, figure, form{
+	display:block;
+	margin:0;
+	padding:0;	
+}
+
+h1, h2, h3, h4, p{
+    margin: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+  
+
+.o-container{
+    width: 60%;
+    max-width: 1600px;
+    display: block;
+    margin: 0 auto;
+}
+
+.image{
+    background-image: url(./images/salmon.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 100vh;
+    width: 100%;
+    grid-column: v1 / v2;
+    grid-row: h1 / h2;
+}
+
+.two-columns-all{
+    display: grid;
+    grid-template-columns: [v1] 0.7fr [v2] 1fr [v3];
+    grid-template-rows: [h1] 1fr [h2];
+    width: 100vw;
+    height: 100vh;
+    background-color: #0E1923;
+}
+
+.wrapper-content{
+    grid-column: v2 / v3;
+    grid-row: h1 / h2;
+    align-self: center;
+    margin-left: 100px;
+}
+
+.top{
+    margin-bottom: 120px;
+}
+.bottom{
+    margin-bottom: 120px;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 66px;
+}
+.subtitle{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.text-strong{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+}
+.text-normal{
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+
+.o-color-white{
+    color: #FFFFFF;
+}
+
+#fixed {
+    display: flex;
+    position: fixed;
+    top: 86%;
+    right: 2%;
+    z-index: 10;
+    align-items: center;
+}
+
+.whatsapp{
+    height: 60px;
+    width: 60px;
+}
+
+@media screen and (max-width: 992px) {
+    .image{
+        background-image: url(./images/salmon.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        height: 100vh;
+        width: 100%;
+        grid-column: v1 / v2;
+        grid-row: h1 / h2;
+    }
+    
+    .two-columns-all{
+        display: grid;
+        grid-template-columns: [v1] 0.4fr [v2] 1fr [v3];
+        grid-template-rows: [h1] 1fr [h2];
+        width: 100vw;
+        height: 100vh;
+        background-color: #0E1923;
+    }
+    
+    .wrapper-content{
+        grid-column: v2 / v3;
+        grid-row: h1 / h2;
+        align-self: center;
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width:694px){
+    
+    #fixed {
+        top: 85%;
+        z-index: 10;
+    }
+    #whatsapp {
+        height: 60px;
+        width: 60px;
+    }
+
+    .o-container{
+        width: 90%;
+        max-width: 1600px;
+        display: block;
+        margin: 0 auto;
+    }
+    
+
+    .image{
+        background-image: url(./images/salmon.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        height: 30vh;
+        width: 100%;
+        grid-column: v1 / v2;
+        grid-row: h2 / h3;
+    }
+    
+    .two-columns-all{
+        display: grid;
+        grid-template-columns: [v1] 1fr [v2];
+        grid-template-rows: [h1] 1fr [h2] 0.1fr [h3];
+        width: 100vw;
+        height: 100vh;
+        background-color: #0E1923;
+    }
+    
+    .wrapper-content{
+        padding-top: 100px;
+        grid-column: v1 / v2;
+        grid-row: h1 / h2;
+        align-self: center;
+        margin-left: 30px;
+    }
+    .top{
+        margin-bottom: 60px;
+    }
+    .botton{
+        padding-bottom: 120px;
+    }
+}
